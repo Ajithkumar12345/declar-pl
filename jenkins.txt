@@ -1,0 +1,33 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build' {
+            steps {
+                echo 'Build app'
+            }
+        }
+    }
+}
+pipeline {
+    agent any
+
+    stages {
+        stage('test') {
+            steps {
+                echo 'test app'
+            }
+        }
+    }
+}
+pipeline {
+    agent any
+
+    stages {
+        stage('depoly') {
+            steps {
+                echo 'depoly app'
+            }
+        }
+    }
+}
